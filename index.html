@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ROYAL HILLSIDE APARTMENTS AND HOTEL</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h1>ROYAL HILLSIDE APARTMENTS  AND HOTEL</h1>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#booking">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h2>Welcome To ROYAL HILLSIDE</h2>
+      <p>Experience comfort and elegance.</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+  </section>
+
+  <section class="rooms" id="rooms">
+    <h2>Our Rooms</h2>
+
+    <div class="room-container">
+
+      <div class="room-card">
+        <img src="one.jpg" alt="">
+        <h3>one room</h3>
+        <p>30,000cfa / Night</p>
+      </div>
+
+      <div class="room-card">
+        <img src="two.jpg" alt="">
+        <h3>studio Room</h3>
+        <p>50,000cfa / Night</p>
+      </div>
+
+      <div class="room-card">
+        <img src="three.jpg" alt="">
+        <h3>apartment rooms</h3>
+        <p>65,000cfa / Night</p>
+      </div> 
+
+      <div class="room-card">
+        <img src="pool.jpg" alt="">
+        <h3>terrace and pool for party</h3>
+        <p>350,000/ day</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      Royal hillside apartments and hotel  located at damas entree frazati YDE offers world-class accommodation with premium services,
+      modern facilities, and unforgettable experiences. for more info call:652598671/671545465
+    </p>
+  </section>
+
+  <section class="booking" id="booking">
+
+    <h1>Book Your Stay</h1>
+
+    <form action="booking.php" method="POST">
+
+      <input type="text" name="name" placeholder="Full Name" required>
+
+      <input type="email" name="email" placeholder="Email Address" required>
+
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+
+      <select name="room" required>
+        <option value="">Select Room</option>
+        <option>one room</option>
+        <option>studio</option>
+        <option>apartments</option> 
+        <option>terrace and pool</option>
+      </select>
+
+      <label>Check In</label>
+      <input type="date" name="checkin" required>
+
+      <label>Check Out</label>
+      <input type="date" name="checkout" required>
+
+      <input type="number" name="guests" placeholder="Number of Guests" required>
+
+      <textarea name="message" placeholder="Additional Message"></textarea>
+
+      <button type="submit">Submit Booking</button>
+
+    </form>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Royal hillside apartmentsand hotel. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
